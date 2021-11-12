@@ -5,5 +5,7 @@ import org.apache.spark.sql.functions._
 object wordcount {
 def main(args: Array[String]):Unit ={
 println("myprograms")
+
+val spark = SparkSession.builder().appName("mypro").master(local[0]).getOrCreate()
 }
 }
