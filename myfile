@@ -7,5 +7,6 @@ def main(args: Array[String]):Unit ={
 println("myprograms")
 
 val spark = SparkSession.builder().appName("mypro").master(local[0]).getOrCreate()
+val myDF=Spark.read.csv("")
 }
 }
